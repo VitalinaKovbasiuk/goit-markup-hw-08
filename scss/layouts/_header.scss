@@ -85,6 +85,32 @@
   text-decoration: none;
 }
 
+// < !-- Посилання - Контакти -->
+.mobile-menu__contact-item {
+  margin-bottom: 32px;
+}
+.mobile-menu__contact-item:last-child {
+  margin-bottom: 64px;
+}
+
+.mobile-menu__tel-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.mobile-menu__mail-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+
 // < !-- Посилання на соціальні мережі -->
 .mobile-menu__social-link {
   font-weight: 500;
