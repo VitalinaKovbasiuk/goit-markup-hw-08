@@ -42,7 +42,7 @@
   height: 100vh;
   overflow: auto;
 
-  background-color: #2196f3;
+  background-color: #552f4d;
 }
 
 .mobile-menu__close-btn {
@@ -62,6 +62,7 @@
   padding-bottom: 48px;
 }
 
+// < !-- Посилання на сторінку -->
 .mobile-menu__item {
   margin-bottom: 32px;
 }
@@ -71,7 +72,7 @@
 
 .mobile-menu__item:hover .mobile-menu__link,
 .mobile-menu__item:focus .mobile-menu__link {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .mobile-menu__link {
@@ -81,6 +82,16 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: #212121;
+  text-decoration: none;
+}
+
+// < !-- Посилання на соціальні мережі -->
+.mobile-menu__social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
   text-decoration: none;
 }
 
