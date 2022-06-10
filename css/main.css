@@ -804,6 +804,9 @@ img {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 }
 
 .header__container {
@@ -844,7 +847,9 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  background-color: #552f4d;
+  background-color: #fff;
+  -webkit-transition: opacity var(--duration) var(--timing-function), visibility var(--duration) var(--timing-function);
+  transition: opacity var(--duration) var(--timing-function), visibility var(--duration) var(--timing-function);
 }
 
 .mobile-menu.is-open {
@@ -863,10 +868,22 @@ img {
   line-height: 0;
 }
 
+.mobile-menu__close-btn:hover .mobile-menu__close-icon,
+.mobile-menu__close-btn:focus .mobile-menu__close-icon {
+  fill: #2196f3;
+  cursor: pointer;
+}
+
 .mobile-menu-container {
   position: relative;
   padding-top: 48px;
   padding-bottom: 48px;
+}
+
+.mobile-menu__list,
+.mobile-menu__contact-list,
+.mobile-menu__social-list {
+  padding-left: 40px;
 }
 
 .mobile-menu__item {
@@ -874,7 +891,7 @@ img {
 }
 
 .mobile-menu__item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 300px;
 }
 
 .mobile-menu__item:hover .mobile-menu__link,
@@ -918,6 +935,14 @@ img {
   text-decoration: none;
 }
 
+.mobile-menu__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .mobile-menu__social-link {
   font-weight: 500;
   font-size: 18px;
@@ -927,11 +952,135 @@ img {
   text-decoration: none;
 }
 
+.mobile-menu__social-item {
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+.mobile-menu__social-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     padding-top: 21px;
     padding-bottom: 21px;
   }
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobile-menu-btn {
+    display: none;
+  }
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .site-nav__item {
+    margin-right: 50px;
+  }
+  .site-nav__item:last-child {
+    margin-right: 0;
+  }
+  .site-nav__item__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #212121;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    position: relative;
+    -webkit-transition: color var(--duration) var(--timing-function);
+    transition: color var(--duration) var(--timing-function);
+  }
+  .site-nav__item__link:hover, .site-nav__item__link:focus {
+    color: var(--accent-color);
+    -webkit-transition: color var(--duration) var(--timing-function);
+    transition: color var(--duration) var(--timing-function);
+  }
+  .site-nav__item__link.current::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    border-radius: 2px;
+    background-color: #2196f3;
+  }
+}
+
+.site-nav__link--studio {
+  color: #2196f3;
+}
+
+.site-nav--portfolio {
+  color: #2196f3;
+}
+
+.auth-nav {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.auth-nav__item-mail {
+  margin-right: 50px;
+}
+
+.auth-nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+  /* padding-top: 32px;
+      padding-bottom: 32px; */
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: color var(--duration) var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
+}
+
+.auth-nav__link:hover, .auth-nav__link:focus {
+  color: var(--accent-color);
+  -webkit-transition: color var(--duration) var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
+}
+
+.auth-nav__icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .hero {

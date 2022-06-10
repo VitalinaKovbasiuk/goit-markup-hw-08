@@ -25,7 +25,7 @@
 
     <!--Styles-->
        <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
 
   <body>
@@ -38,7 +38,7 @@
           <!-- Site nav list -->
           <ul class="site-nav list">
             <li class="site-nav__item">
-              <a class="site-nav__link site-nav--studio current" href="">Студия</a>
+              <a class="site-nav__link site-nav__link--studio  current" href="">Студия</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
@@ -57,9 +57,59 @@
           </svg>
         </button>
 
+<!-- Мобільна кнопка бургер -->
+<div class="mobile-menu" data-menu>
+  <div class="container mobile-menu-container">
+    <button type="button" class="mobile-menu__close-btn" data-menu-close>
+      <svg class="mobile-menu__close-icon" width="40" height="40">
+        <use href="./images/svg-icon/form-icon/form-sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <!-- Посилання на сторінку -->
+    <ul class="list mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a href="./index.html" class="link mobile-menu__link">Студия</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="./portfolio.html" class="link mobile-menu__link">Портфолио</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="link mobile-menu__link">Контакты</a>
+      </li>
+    </ul>
+
+    <!--  Посилання - Контакти -->
+    <ul class="list mobile-menu__contact-list">
+      <li class="link mobile-menu__contact-item">
+        <a class="mobile-menu__tel-link" href="tel:+380961111111">+38 096 111 11 11</a>
+      </li>
+      <li class="link mobile-menu__contact-item">
+        <a class="mobile-menu__mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+    </ul>
+
+    <!-- Посилання на соціальні мережі -->
+    <ul class="list mobile-menu__social-list">
+      <li class="mobile-menu__social-item">
+        <a href="#" class="link mobile-menu__social-link">Instagram</a>
+      </li>
+      <li class="mobile-menu__social-item">
+        <a href="#" class="link mobile-menu__social-link">Twitter</a>
+      </li>
+      <li class="mobile-menu__social-item">
+        <a href="#" class="link mobile-menu__social-link">Facebook</a>
+      </li>
+      <li class="mobile-menu__social-item">
+        <a href="#" class="link mobile-menu__social-link">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 <!-- Auth nav list -->
         <ul class="auth-nav list">
-          <li class="auth-nav__item--mail">
+          <li class="auth-nav__item-mail">
             <a class="auth-nav__link" href="mailto:info@devstudio.com">
               <svg class="auth-nav__icon" width="16" height="12">
                 <use href="./images/svg-icon/icons/sprite.svg#icon-envelope"></use>
@@ -67,7 +117,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="auth-nav__item--tel">
+          <li class="auth-nav__item-tel">
             <a class="auth-nav__link" href="tel:+380961111111">
               <svg class="auth-nav__icon" width="10" height="32">
                 <use href="./images/svg-icon/icons/sprite.svg#icon-smartphone"></use>
@@ -78,56 +128,7 @@
         </ul>
       </div>
 
-      <!-- Мобільна кнопка бургер -->
-      <div class="mobile-menu" data-menu>
-        <div class="container mobile-menu-container">
-          <button type="button" class="mobile-menu__close-btn" data-menu-close>
-            <svg class="mobile-menu__close-icon" width="40" height="40">
-            <use href="./images/svg-icon/form-icon/form-sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-
-<!-- Посилання на сторінку -->
-<ul class="list mobile-menu__list">
-  <li class="mobile-menu__item">
-    <a href="" class="link mobile-menu__link">Студия</a>
-  </li>
-  <li class="mobile-menu__item">
-    <a href="" class="link mobile-menu__link">Портфолио</a>
-  </li>
-  <li class="mobile-menu__item">
-    <a href="" class="link mobile-menu__link">Контакты</a>
-  </li>
-</ul>
-
-<!--  Посилання - Контакти -->
-<ul class="list mobile-menu__contact-list">
-  <li class="link mobile-menu__contact-item">
-    <a class="mobile-menu__tel-link" href="tel:+380961111111">+38 096 111 11 11</a>
-  </li>
-  <li class="link mobile-menu__contact-item">
-    <a class="mobile-menu__mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-  </li>
-</ul>
-
-<!-- Посилання на соціальні мережі -->
-<ul class="list mobile-menu__social-list">
-  <li class="mobile-menu__social-item">
-    <a href="" class="link mobile-menu__social-link">Instagram</a>
-  </li>
-  <li class="mobile-menu__social-item">
-    <a href="" class="link mobile-menu__social-link">Twitter</a>
-  </li>
-  <li class="mobile-menu__social-item">
-    <a href="" class="link mobile-menu__social-link">Facebook</a>
-  </li>
-  <li class="mobile-menu__social-item">
-    <a href="" class="link mobile-menu__social-link">LinkedIn</a>
-  </li>
-</ul>
-        </div>
-
-      </div>
+      
     </header>
 
     <main>
