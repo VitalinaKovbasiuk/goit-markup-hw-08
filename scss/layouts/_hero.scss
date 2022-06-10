@@ -15,8 +15,16 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/hero-head.jpg);
+        url('/images/hero-head-deck.jpg');
 }
+
+// @media (min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .hero-overlay {
+//     background-image: url('/images/hero-head@2x-deck.jpg');
+//       }
+// }
 
 .hero-head {
     font-weight: 900;

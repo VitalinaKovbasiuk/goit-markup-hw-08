@@ -178,10 +178,8 @@
   .header {
     display: flex;
     align-items: center;
-    padding-top: 0;
-    padding-bottom: 0;
-    
-  }
+    padding: 0
+      }
 
   .navigation-list {
     padding: 0;
@@ -192,8 +190,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 84px;
-
+    
     &__item {
       margin-right: 50px;
       
@@ -245,12 +242,12 @@
   }
 
   .auth-nav {
-    // margin-left: auto;
+    margin-left: auto;
     display: flex;
     flex-wrap: wrap;
     padding-top: 21px;
+    margin-left: 84px;
     // padding-bottom: 8px;
-        // margin-left: auto;
     // margin-top: 21px;
     // margin-bottom: 21px;
 
@@ -283,6 +280,11 @@
   .auth-nav__item-mail {
     margin-bottom: 10px;
   }
+
+  .auth-nav__item-tel {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 // Розширення decktop 1200+
@@ -292,6 +294,7 @@
     display: flex;
     align-items: center;
     justify-items: center;
+    padding-top: 0;
   }
 
   .auth-nav__link {
