@@ -1,11 +1,3 @@
-.site-nav {
-  display: none;
-}
-
-.auth-nav {
-  display: none;
-}
-
 .header {
   position: relative;
   padding-top: 10px;
@@ -22,227 +14,233 @@
   }
 }
 
-.mobile-menu-btn {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
-  cursor: pointer;
-
-  &:hover .mobile-menu-btn-icon {
-    fill: #2196f3;
+// Розширення 0px-767px
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
   }
-
-  &:focus-within .mobile-menu-btn-icon {
-    fill: #2196f3;
+  
+  .auth-nav {
+    display: none;
   }
-}
-
-.mobile-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: auto;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  background-color: #fff;
-  transition: opacity var(--duration) var(--timing-function),
-  visibility var(--duration) var(--timing-function);
-}
-
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.mobile-menu__close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
-
-  &:hover .mobile-menu__close-icon,
-  &:focus .mobile-menu__close-icon {
-    fill: #2196f3;
+ 
+  .mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
     cursor: pointer;
-  }
-}
-
-.mobile-menu-container {
-  position: relative;
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
-// < !-- Посилання на сторінку -->
-.mobile-menu__list,
-.mobile-menu__contact-list,
-.mobile-menu__social-list {
-  padding-left: 40px;
-}
-
-.mobile-menu__item {
-  margin-bottom: 32px;
-
-  &:last-child {
-    margin-bottom: 300px;
-  }
-
-  &:hover .mobile-menu__link,
-  &:focus .mobile-menu__link {
-    color: #2196f3;
-  }
-}
-
-.mobile-menu__link {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #212121;
-  text-decoration: none;
-}
-
-// < !-- Посилання - Контакти -->
-.mobile-menu__contact-item {
-  margin-bottom: 32px;
-
-  &:last-child {
-    margin-bottom: 64px;
-  }
-}
-
-.mobile-menu__tel-link {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
-  color: #2196f3;
-  text-decoration: none;
-}
-
-.mobile-menu__mail-link {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: #757575;
-  text-decoration: none;
-}
-
-// < !-- Посилання на соціальні мережі -->
-.mobile-menu__social-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.mobile-menu__social-link {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: #2196f3;
-  text-decoration: none;
-}
-
-.mobile-menu__social-item {
-  padding-right: 10px;
-  margin-top: 10px;
-
-  &:not(:last-child) {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-    margin-right: 10px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
-
-    &__container {
-      display: flex;
-      align-items: center;
+  
+    &:hover .mobile-menu-btn-icon {
+      fill: #2196f3;
+    }
+  
+    &:focus-within .mobile-menu-btn-icon {
+      fill: #2196f3;
     }
   }
+  
+  .mobile-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background-color: #fff;
+    transition: opacity var(--duration) var(--timing-function), 
+    visibility var(--duration) var(--timing-function);
+  }
+  
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .mobile-menu__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  
+    &:hover .mobile-menu__close-icon,
+    &:focus .mobile-menu__close-icon {
+      fill: #2196f3;
+      cursor: pointer;
+    }
+  }
+  
+  .mobile-menu-container {
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  
+  // < !-- Посилання на сторінку -->
+  .mobile-menu__list,
+  .mobile-menu__contact-list,
+  .mobile-menu__social-list {
+    padding-left: 40px;
+  }
+  
+  .mobile-menu__item {
+    margin-bottom: 32px;
+  
+    &:last-child {
+      margin-bottom: 300px;
+    }
+  
+    &:hover .mobile-menu__link,
+    &:focus .mobile-menu__link {
+      color: #2196f3;
+    }
+  }
+  
+  .mobile-menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+  }
+  
+  // < !-- Посилання - Контакти -->
+  .mobile-menu__contact-item {
+    margin-bottom: 32px;
+  
+    &:last-child {
+      margin-bottom: 64px;
+    }
+  }
+  
+  .mobile-menu__tel-link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+    text-decoration: none;
+  }
+  
+  .mobile-menu__mail-link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+  }
+  
+  // < !-- Посилання на соціальні мережі -->
+  .mobile-menu__social-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .mobile-menu__social-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+    text-decoration: none;
+  }
+  
+  .mobile-menu__social-item {
+    padding-right: 10px;
+    margin-top: 10px;
+  
+    &:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      margin-right: 10px;
+    }
+  }
+}
 
-  .mobile-menu-btn {
+// Розширення tablet 768+
+@media screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-btn {
     display: none;
   }
 
+  .header {
+      display: flex;
+      align-items: center;
+          }
+    
   .site-nav {
     display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .site-nav__item {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+        
+  &__item {
     margin-right: 50px;
-
+  
     &:last-child {
       margin-right: 0;
     }
-
-    &__link {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-      color: #212121;
-      padding-top: 32px;
-      padding-bottom: 32px;
-      display: block;
-      position: relative;
-      transition: color var(--duration) var(--timing-function);
-
-      &:hover,
-      &:focus {
-        color: var(--accent-color);
-        transition: color var(--duration) var(--timing-function);
-      }
-
-      &.current::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 4px;
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        border-radius: 2px;
-        background-color: rgba(33, 150, 243, 1);
-      }
+  }
+  
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #212121;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    position: relative;
+    transition: color var(--duration) var(--timing-function);
+  
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: color var(--duration) var(--timing-function);
+  }
+  
+  &.current::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    border-radius: 2px;
+    background-color: rgba(33, 150, 243, 1);
+  }
     }
   }
-}
-
-.site-nav__link--studio {
-  color: #2196f3;
-}
-
-.site-nav--portfolio {
-  color: #2196f3;
-}
-
-.auth-nav {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-
+  
+  .site-nav__link--studio {
+    color: #2196f3;
+  }
+  
+  .site-nav--portfolio {
+    color: #2196f3;
+  }
+  
+  .auth-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  
   &__item-mail {
     margin-right: 50px;
   }
-
+  
   &__link {
     font-weight: 500;
     font-size: 14px;
@@ -250,26 +248,32 @@
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
-    /* padding-top: 32px;
-      padding-bottom: 32px; */
-    display: block;
+     display: block;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: color var(--duration) var(--timing-function);
-
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-      transition: color var(--duration) var(--timing-function);
+  
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: color var(--duration) var(--timing-function);
+  }
+  }
+  
+    &__icon {
+      fill: currentColor;
+      margin-right: 10px;
     }
   }
-
-  &__icon {
-    fill: currentColor;
-    margin-right: 10px;
-  }
+ 
 }
 
+// Розширення decktop 1200+
 @media screen and (min-width: 1200px) {
+  .auth-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
 }

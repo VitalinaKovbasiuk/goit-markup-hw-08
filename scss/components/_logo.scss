@@ -20,10 +20,18 @@
   }
 }
 
-// 1200+
+// Розширення tablet 768+
+@media screen and (min-width: 768px) {
+  .site-logo {
+    margin-right: 88px;
+      }
+  
+}
+
+// Розширення decktop 1200+
 @media screen and (min-width: 1200px) {
   .site-logo {
-    margin-right: 93px;
+  margin-right: 93px;
   }
 
   .site-logo__footer {
@@ -32,3 +40,5 @@
     display: block;
   }
 }
+
+
