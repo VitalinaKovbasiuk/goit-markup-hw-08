@@ -50,8 +50,8 @@
   z-index: 1;
 }
 
-// @media screen and (max-width: 767px) {
-//   .what-we-do {
-//     display: none;
-//   }
-// }
+@media screen and (max-width: 767px) {
+  .what-we-do {
+    display: none;
+  }
+}
