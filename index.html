@@ -34,6 +34,8 @@
       <div class="container header__container">
         <a class="site-logo" href="./index.html"><span class="site-logo__web">Web</span>Studio</a>
         <nav>
+
+          <!-- Site nav list -->
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a class="site-nav__link site-nav--studio current" href="">Студия</a>
@@ -46,12 +48,16 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-btn">
+
+        <!-- Виклик мобільної кнопки бургер -->
+        <button type="button" class="mobile-menu-btn" data-menu-open>
           <svg class="mobile-menu-btn-icon" width="40" height="40">
           <use href="./images/svg-icon/form-icon/form-sprite.svg#icon-menu-mobile">
           </use>
           </svg>
         </button>
+
+<!-- Auth nav list -->
         <ul class="auth-nav list">
           <li class="auth-nav__item--mail">
             <a class="auth-nav__link" href="mailto:info@devstudio.com">
@@ -73,13 +79,13 @@
       </div>
 
       <!-- Мобільна кнопка бургер -->
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-<button class="mobile-menu__close-btn">
-  <svg class="mobile-menu__close-icon" width="40" height="40">
-    <use href="./images/svg-icon/form-icon/form-sprite.svg#icon-close"></use>
-  </svg>
-</button>
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+            <use href="./images/svg-icon/form-icon/form-sprite.svg#icon-close"></use>
+            </svg>
+          </button>
 
 <!-- Посилання на сторінку -->
 <ul class="list mobile-menu__list">
@@ -763,5 +769,6 @@
     </footer> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
