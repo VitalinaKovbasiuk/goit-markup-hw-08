@@ -1397,6 +1397,10 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .our-team__box {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
   .our-team__surnames {
     width: 354px;
     -ms-flex-preferred-size: calc((100% - 3 * 30px) / 2);
@@ -1445,28 +1449,9 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
 }
 
-.regular-customers-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.regular-customers-link {
-  width: 170px;
-  height: 92px;
-  background-color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.regular-customers-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1475,35 +1460,129 @@ img {
           justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 1px;
+  background-color: #ffffff;
   -webkit-transition: border-color var(--duration) var(--timing-function), fill var(--duration) var(--timing-function);
   transition: border-color var(--duration) var(--timing-function), fill var(--duration) var(--timing-function);
 }
 
-.regular-customers-link:hover, .regular-customers-link:focus {
+.regular-customers-item:hover,
+.regular-customers-item:focus-within {
   border: 1px solid #2196f3;
   -webkit-transition: border-color var(--duration) var(--timing-function), fill var(--duration) var(--timing-function);
   transition: border-color var(--duration) var(--timing-function), fill var(--duration) var(--timing-function);
 }
 
-.regular-customers-link:hover .regular-customers-icon,
-.regular-customers-link:focus .regular-customers-icon {
+.regular-customers-item:hover .regular-customers-icon,
+.regular-customers-item:focus-within .regular-customers-icon {
   fill: #2196f3;
+  outline: none;
   -webkit-transition: fill var(--duration) var(--timing-function);
   transition: fill var(--duration) var(--timing-function);
-}
-
-.regular-customers-item {
-  margin-right: 30px;
-}
-
-.regular-customers-item:last-child {
-  margin-right: 0;
 }
 
 .regular-customers-icon {
   fill: #afb1b8;
+  outline: none;
   -webkit-transition: fill var(--duration) var(--timing-function);
   transition: fill var(--duration) var(--timing-function);
+}
+
+@media screen and (min-width: 480px) {
+  .regular-customers-head {
+    margin-bottom: 30px;
+  }
+  .regular-customers-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .regular-customers-item {
+    width: 210px;
+    height: 92px;
+    padding: 16px 52px;
+  }
+  .regular-customers-item:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+  .regular-customers-item:nth-child(n + 5) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .regular-customers-item {
+    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 2);
+        flex-basis: calc((100% - 3 * 30px) / 2);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .regular-customers-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .regular-customers-item {
+    width: 226px;
+    padding: 16px 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .regular-customers-list {
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-customers-head {
+    margin-bottom: 50px;
+  }
+  .regular-customers-item {
+    margin-right: 30px;
+    width: 170px;
+    padding: 16px 32px;
+  }
+  .regular-customers-item:last-child {
+    margin-right: 0;
+  }
+  .regular-customers-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .regular-customers-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 /* Portfolio projects */

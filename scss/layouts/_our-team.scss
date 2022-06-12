@@ -55,6 +55,11 @@
     justify-content: center;
   }
 
+  .our-team__box {
+    padding-top: 30px;
+    padding-bottom: 24px;
+      }
+
   .our-team__surnames {
     width: 354px;
     flex-basis: calc((100% - 3 * 30px) / 2);
