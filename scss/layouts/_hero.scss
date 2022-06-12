@@ -1,30 +1,10 @@
 .hero {
     background: #2f303a;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
 }
 
-.hero-overlay {
-    height: 600px;
-    max-width: 1600px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url('/images/hero-head-deck.jpg');
-}
-
-// @media (min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-//   .hero-overlay {
-//     background-image: url('/images/hero-head@2x-deck.jpg');
-//       }
-// }
 
 .hero-head {
     font-weight: 900;
@@ -36,4 +16,71 @@
     width: 696px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+@media screen and (max-width: 767px) {
+    .hero-overlay {
+        height: 400px;
+        max-width: 480px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url('/images/hero-head-mobile.jpg');
+    }
+    
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero-overlay {
+        background-image: url('/images/hero-head@2x-mobile.jpg');
+          }
+    }
+}
+
+@media screen and (min-width: 768px) {
+        .hero-overlay {
+        height: 400px;
+        max-width: 768px;
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url('/images/hero-head-tablet.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero-overlay {
+        background-image: url('/images/hero-head@2x-tablet.jpg');
+          }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding-top: 200px;
+        padding-bottom: 200px; 
+    }
+
+    .hero-overlay {
+        height: 600px;
+        max-width: 1600px;
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url('/images/hero-head-deck.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero-overlay {
+        background-image: url('/images/hero-head@2x-deck.jpg');
+          }
+    }
 }
