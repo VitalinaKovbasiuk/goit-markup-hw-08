@@ -29,14 +29,15 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list {
@@ -71,13 +72,13 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -1033,7 +1034,6 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-top: 21px;
     margin-left: 84px;
   }
   .auth-nav__link {
@@ -1168,38 +1168,6 @@ img {
   }
 }
 
-.peculiarities-section {
-  padding-bottom: 0;
-}
-
-.peculiarities-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.peculiarties-list-box {
-  margin-right: 30px;
-  width: 270px;
-}
-
-.peculiarties-list-box:last-child {
-  margin-right: 0;
-}
-
-.peculiarties-list-box::before {
-  display: block;
-  content: '';
-  height: 120px;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-}
-
 .icon-antenna::before {
   background-image: url(../images/svg-icon/antenna.svg);
 }
@@ -1214,23 +1182,6 @@ img {
 
 .icon-astronaut::before {
   background-image: url(../images/svg-icon/astronaut.svg);
-}
-
-.peculiarities-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.peculiarities-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .our-team__head {

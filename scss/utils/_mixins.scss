@@ -1,0 +1,42 @@
+@mixin mg($type) {
+    $mobile: 480px;
+    $tablet: 768px;
+    $decktop: 1200px;
+   
+    
+    @if $type == 'mobile-only' {
+        @media screen and (max-width: #{$tablet - 0.02}) {
+            @content;
+        }
+    }
+
+    @if $type == 'mobile' {
+        @media screen and (min-width: $mobile) {
+            @content;
+        }
+    }
+
+    @if $type == 'tablet-only' {
+        @media screen and (min-width: $tablet) and (max-width: #{$decktop - 0.02}) {
+            @content;
+        }
+    }
+
+    @if $type == 'tablet' {
+        @media screen and (min-width: $tablet) {
+            @content;
+        }
+    }
+
+    @if $type == 'not-decktop' {
+        @media screen and (max-width: #{$decktop - 0.02}) {
+            @content;
+        }
+    }
+
+    @if $type == 'decktop' {
+        @media screen and (min-width: $decktop) {
+            @content;
+        }
+    }
+}

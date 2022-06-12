@@ -1,16 +1,22 @@
 .container {
   padding-left: 15px;
   padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+@include mg(mobile) {
+  width: 480px;
+}
+
   }
 
-// 480+
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+// // 480+
+// @media screen and (min-width: 480px) {
+//   .container {
+//     width: 480px;
+//       }
+// }
 
 // 768+
 @media screen and (min-width: 768px) {
@@ -19,6 +25,7 @@
         }
   }
 
+  // 1200+
 @media screen and (min-width: 1200px) {
 .container {
     width: 1200px;
