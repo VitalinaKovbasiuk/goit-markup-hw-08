@@ -4,19 +4,15 @@
 
   margin-left: auto;
   margin-right: auto;
-
-@include mg(mobile) {
-  width: 480px;
-}
-
+  
   }
 
-// // 480+
-// @media screen and (min-width: 480px) {
-//   .container {
-//     width: 480px;
-//       }
-// }
+// 480+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+      }
+}
 
 // 768+
 @media screen and (min-width: 768px) {
