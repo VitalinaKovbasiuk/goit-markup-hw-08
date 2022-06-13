@@ -37,6 +37,31 @@
   transition: fill var(--duration) var(--timing-function);
 }
 
+@media screen and (min-width: 0) and (max-width: 479px) {
+  .regular-customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .regular-customers-head {
+    margin-bottom: 30px;
+  }
+
+  .regular-customers-item {
+    width: 100%;
+    padding: 16px 52px;
+  }
+
+  .regular-customers-item:nth-child(n + 5) {
+    margin-bottom: 0;
+  }
+
+  .regular-customers-item {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .regular-customers-head {
     margin-bottom: 30px;
@@ -65,7 +90,7 @@
     margin-bottom: 30px;
     height: 92px;
   }
-  
+
   .regular-customers-item:nth-child(2n + 2) {
     margin-right: 0;
   }

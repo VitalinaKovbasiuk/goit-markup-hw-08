@@ -87,11 +87,13 @@
     justify-content: center;
     align-items: center;
   }
-
-  .portfolio-projects-list {
-    margin-bottom: 30px;
+  
+  .tehnocriak, .poster, .seafood, .prime, .boxes, .inspiration, .izdanie, .lab, .growing {
+    width: 450px;
   }
+}
 
+@media screen and (max-width: 767px) {
   .porfolio-navigation-list {
     display: flex;
     flex-wrap: wrap;
@@ -99,13 +101,14 @@
     margin-bottom: 40px;
   }
 
+  .portfolio-projects-list {
+    margin-bottom: 30px;
+  }
+
   .portfolio-navigation-item {
     margin-bottom: 15px;
   }
 
-  .tehnocriak, .poster, .seafood, .prime, .boxes, .inspiration, .izdanie, .lab, .growing {
-    width: 450px;
-  }
 }
 
 @media screen and (min-width: 768px) {

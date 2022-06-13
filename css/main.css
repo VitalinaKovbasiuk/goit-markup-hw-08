@@ -1151,16 +1151,16 @@ img {
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-head-mobile.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-head-mobile.jpg");
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-head-mobile.webp") 1x;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-head-mobile.webp") 1x;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("/images/hero-head-mobile.webp") 1x);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("/images/hero-head-mobile.webp") 1x);
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-head@2x-mobile.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-head@2x-mobile.jpg");
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-head@2x-mobile.webp") 2x;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-head@2x-mobile.webp") 2x;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("/images/hero-head@2x-mobile.webp") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("/images/hero-head@2x-mobile.webp") 2x);
   }
 }
 
@@ -1168,8 +1168,8 @@ img {
   .hero-overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-head-tablet.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-head-tablet.jpg");
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-head-tablet.webp") 1x;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-head-tablet.webp") 1x;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("/images/hero-head-tablet.webp") 1x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("/images/hero-head-tablet.webp") 1x);
   }
 }
 
@@ -1177,8 +1177,8 @@ img {
   .hero-overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-head@2x-tablet.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-head@2x-tablet.jpg");
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-head@2x-tablet.webp") 2x;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-head@2x-tablet.webp") 2x;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("/images/hero-head@2x-tablet.webp") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("/images/hero-head@2x-tablet.webp") 2x);
   }
 }
 
@@ -1186,8 +1186,8 @@ img {
   .hero-overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-head-deck.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-head-deck.jpg");
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-head-deck.webp") 1x;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-head-deck.webp") 1x;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("/images/hero-head-deck.webp") 1x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("/images/hero-head-deck.webp") 1x);
   }
 }
 
@@ -1195,8 +1195,8 @@ img {
   .hero-overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-head@2x-deck.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-head@2x-deck.jpg");
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-head@2x-deck.webp") 2x;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-head@2x-deck.webp") 2x;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("/images/hero-head@2x-deck.webp") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("/images/hero-head@2x-deck.webp") 2x);
   }
 }
 
@@ -1395,27 +1395,26 @@ img {
   background: #ffffff;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .our-team__list {
     display: block;
   }
-  .our-team__box {
-    padding-top: 30px;
-    padding-bottom: 24px;
+  .demianenko,
+  .repina,
+  .tarasov,
+  .ermakov {
+    width: 100%;
+    height: 100%;
   }
   .our-team__surnames {
-    width: 450px;
     margin-bottom: 30px;
   }
   .our-team__surnames:last-child {
     margin-bottom: 0;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .demianenko, .repina, .tarasov, .ermakov {
-    width: 450px;
-    height: 460px;
+  .our-team__box {
+    padding-top: 30px;
+    padding-bottom: 24px;
   }
 }
 
@@ -1439,13 +1438,16 @@ img {
     margin-right: 30px;
     margin-bottom: 30px;
   }
-  .our-team__surnames:nth-child(2n+2) {
+  .our-team__surnames:nth-child(2n + 2) {
     margin-right: 0;
   }
   .our-team__surnames:nth-child(n + 3) {
     margin-bottom: 0;
   }
-  .demianenko, .repina, .tarasov, .ermakov {
+  .demianenko,
+  .repina,
+  .tarasov,
+  .ermakov {
     width: 354px;
     height: 374px;
   }
@@ -1476,7 +1478,10 @@ img {
   .our-team__surnames {
     width: 270px;
   }
-  .demianenko, .repina, .tarasov, .ermakov {
+  .demianenko,
+  .repina,
+  .tarasov,
+  .ermakov {
     width: 270px;
     height: 260px;
   }
@@ -1524,6 +1529,32 @@ img {
   outline: none;
   -webkit-transition: fill var(--duration) var(--timing-function);
   transition: fill var(--duration) var(--timing-function);
+}
+
+@media screen and (min-width: 0) and (max-width: 479px) {
+  .regular-customers-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .regular-customers-head {
+    margin-bottom: 30px;
+  }
+  .regular-customers-item {
+    width: 100%;
+    padding: 16px 52px;
+  }
+  .regular-customers-item:nth-child(n + 5) {
+    margin-bottom: 0;
+  }
+  .regular-customers-item {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1729,9 +1760,12 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
-  .portfolio-projects-list {
-    margin-bottom: 30px;
+  .tehnocriak, .poster, .seafood, .prime, .boxes, .inspiration, .izdanie, .lab, .growing {
+    width: 450px;
   }
+}
+
+@media screen and (max-width: 767px) {
   .porfolio-navigation-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1743,11 +1777,11 @@ img {
             justify-content: flex-start;
     margin-bottom: 40px;
   }
+  .portfolio-projects-list {
+    margin-bottom: 30px;
+  }
   .portfolio-navigation-item {
     margin-bottom: 15px;
-  }
-  .tehnocriak, .poster, .seafood, .prime, .boxes, .inspiration, .izdanie, .lab, .growing {
-    width: 450px;
   }
 }
 

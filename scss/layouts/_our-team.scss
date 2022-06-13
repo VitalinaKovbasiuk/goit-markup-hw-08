@@ -28,31 +28,32 @@
   background: #ffffff;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .our-team__list {
     display: block;
   }
 
-  .our-team__box {
-    padding-top: 30px;
-    padding-bottom: 24px;
-      }
+  .demianenko,
+  .repina,
+  .tarasov,
+  .ermakov {
+    width: 100%;
+    height: 100%;
+  }
 
   .our-team__surnames {
-    width: 450px;
+    // width: 450px;
     margin-bottom: 30px;
   }
 
   .our-team__surnames:last-child {
     margin-bottom: 0;
   }
-}
 
-@media screen and (max-width: 767px) {
-.demianenko, .repina, .tarasov, .ermakov {
-  width: 450px;
-  height: 460px;
-}
+  .our-team__box {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -65,7 +66,7 @@
   .our-team__box {
     padding-top: 30px;
     padding-bottom: 24px;
-      }
+  }
 
   .our-team__surnames {
     width: 354px;
@@ -74,18 +75,21 @@
     margin-bottom: 30px;
   }
 
-  .our-team__surnames:nth-child(2n+2) {
+  .our-team__surnames:nth-child(2n + 2) {
     margin-right: 0;
-}
+  }
 
-.our-team__surnames:nth-child(n + 3) {
-  margin-bottom: 0;
-} 
+  .our-team__surnames:nth-child(n + 3) {
+    margin-bottom: 0;
+  }
 
-.demianenko, .repina, .tarasov, .ermakov {
-  width: 354px;
-  height: 374px;
-}
+  .demianenko,
+  .repina,
+  .tarasov,
+  .ermakov {
+    width: 354px;
+    height: 374px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -102,7 +106,7 @@
 
   .our-team__surnames {
     margin-right: 30px;
-      }
+  }
 
   .our-team__surnames:last-child {
     margin-right: 0;
@@ -112,7 +116,10 @@
     width: 270px;
   }
 
-  .demianenko, .repina, .tarasov, .ermakov {
+  .demianenko,
+  .repina,
+  .tarasov,
+  .ermakov {
     width: 270px;
     height: 260px;
   }
