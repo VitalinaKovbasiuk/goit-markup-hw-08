@@ -1,86 +1,72 @@
 .hero {
-    background: #2f303a;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    text-align: center;
+  background: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
-
 
 .hero-head {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.hero-overlay {
+  height: 600px;
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
 
-@media screen and (max-width: 767px) {
-    .hero-overlay {
-        height: 400px;
-        max-width: 480px;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url('/images/hero-head-mobile.jpg');
-    }
-    
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .hero-overlay {
-        background-image: url('/images/hero-head@2x-mobile.jpg');
-          }
-    }
-}
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('/images/hero-head-mobile.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    (url('/images/hero-head-mobile.webp') 1x);
 
-@media screen and (min-width: 768px) {
-        .hero-overlay {
-        height: 400px;
-        max-width: 768px;
-        background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url('/images/hero-head-tablet.jpg');
-    }
+  // Завантаження ретінізованого фонового зображення
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/hero-head@2x-mobile.jpg');
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      (url('/images/hero-head@2x-mobile.webp') 2x);
+  }
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .hero-overlay {
-        background-image: url('/images/hero-head@2x-tablet.jpg');
-          }
-    }
-}
+  // Фонове зображення для tablet
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/hero-head-tablet.jpg');
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      (url('/images/hero-head-tablet.webp') 1x);
 
-@media screen and (min-width: 1200px) {
-    .hero {
-        padding-top: 200px;
-        padding-bottom: 200px; 
+    // Завантаження ретінізованого фонового зображення для tablet
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('/images/hero-head@2x-tablet.jpg');
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        (url('/images/hero-head@2x-tablet.webp') 2x);
     }
+  }
+  // Фонове зображення для decktop
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/hero-head-deck.jpg');
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      (url('/images/hero-head-deck.webp') 1x);
 
-    .hero-overlay {
-        height: 600px;
-        max-width: 1600px;
-        background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url('/images/hero-head-deck.jpg');
+    // Завантаження ретінізованого фонового зображення для decktop
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('/images/hero-head@2x-deck.jpg');
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        (url('/images/hero-head@2x-deck.webp') 2x);
     }
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .hero-overlay {
-        background-image: url('/images/hero-head@2x-deck.jpg');
-          }
-    }
+  }
 }
