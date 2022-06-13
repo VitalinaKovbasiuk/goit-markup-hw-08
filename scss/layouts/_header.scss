@@ -51,6 +51,7 @@
     visibility: hidden;
     pointer-events: none;
     background-color: #fff;
+    z-index: 100;
     transition: opacity var(--duration) var(--timing-function),
       visibility var(--duration) var(--timing-function);
   }

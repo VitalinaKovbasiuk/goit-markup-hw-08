@@ -862,6 +862,7 @@ img {
     visibility: hidden;
     pointer-events: none;
     background-color: #fff;
+    z-index: 100;
     -webkit-transition: opacity var(--duration) var(--timing-function), visibility var(--duration) var(--timing-function);
     transition: opacity var(--duration) var(--timing-function), visibility var(--duration) var(--timing-function);
   }
