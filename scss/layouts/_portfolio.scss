@@ -102,6 +102,10 @@
   .portfolio-navigation-item {
     margin-bottom: 15px;
   }
+
+  .tehnocriak, .poster, .seafood, .prime, .boxes, .inspiration, .izdanie, .lab, .growing {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -119,13 +123,17 @@
   .portfolio-projects {
     display: flex;
     flex-wrap: wrap;
-    
-  }
+    justify-content: flex-start;
+    }
+
+    .tehnocriak, .poster, .seafood, .prime, .boxes, .inspiration, .izdanie, .lab, .growing {
+      width: 354px;
+    }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-projects-list {
-    flex-basis: calc((100% - 3 * 30px) / 2);
+    // flex-basis: calc((100% - 3 * 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -136,7 +144,7 @@
 
   .portfolio-projects-list:nth-child(n + 9) {
     margin-bottom: 0;
-  }
+      }
 }
 
 @media screen and (min-width: 1200px) {
@@ -158,5 +166,9 @@
 
   .portfolio-projects-list:nth-child(n + 7) {
     margin-bottom: 0;
+  }
+
+  .tehnocriak, .poster, .seafood, .prime, .boxes, .inspiration, .izdanie, .lab, .growing {
+    width: 370px;
   }
 }

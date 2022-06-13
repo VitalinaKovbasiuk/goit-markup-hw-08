@@ -288,6 +288,18 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .icon-envelope {
+    width: 14px;
+    height: 10px;
+  }
+
+  .icon-smartphone {
+    width: 10px;
+    height: 14px;
+  }
+}
+
 // Розширення decktop 1200+
 @media screen and (min-width: 1200px) {
     .auth-nav {
