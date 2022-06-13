@@ -1506,11 +1506,7 @@ img {
   }
   .regular-customers-item {
     width: 210px;
-    height: 92px;
     padding: 16px 52px;
-  }
-  .regular-customers-item:nth-child(2n + 2) {
-    margin-right: 0;
   }
   .regular-customers-item:nth-child(n + 5) {
     margin-bottom: 0;
@@ -1522,6 +1518,10 @@ img {
     -ms-flex-preferred-size: calc((100% - 3 * 30px) / 2);
         flex-basis: calc((100% - 3 * 30px) / 2);
     margin-bottom: 30px;
+    height: 92px;
+  }
+  .regular-customers-item:nth-child(2n + 2) {
+    margin-right: 0;
   }
 }
 
