@@ -16,7 +16,7 @@
 
 // Розширення 0px-767px
 @media screen and (max-width: 767px) {
-  .site-nav {
+   .site-nav {
     display: none;
   }
 
@@ -183,11 +183,6 @@
     padding: 0
       }
 
-  .navigation-list {
-    padding: 0;
-    margin: 0;
-  }
-
   .site-nav {
     display: flex;
     align-items: center;
@@ -289,6 +284,11 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .navigation-list {
+    padding: 0;
+    margin-left: 88px;
+  }
+  
   .icon-envelope {
     width: 14px;
     height: 10px;

@@ -201,20 +201,25 @@ img {
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-  .site-logo {
-    margin-right: 88px;
+@media screen and (max-width: 1199px) {
+  .site-logo__footer {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-logo__footer {
+    margin-right: 0;
+    margin-bottom: 20px;
+    display: block;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .site-logo {
     margin-right: 93px;
-  }
-  .site-logo__footer {
-    margin-right: 0;
-    margin-bottom: 20px;
-    display: block;
   }
 }
 
@@ -648,6 +653,12 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-form__name {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contact-form__form {
     display: -webkit-box;
@@ -768,6 +779,12 @@ img {
   min-height: 50px;
   max-width: 220px;
   min-width: 200px;
+}
+
+@media screen and (max-width: 1199px) {
+  .contact-form__buttom {
+    margin: 0 auto;
+  }
 }
 
 .contact-form__icon {
@@ -994,10 +1011,6 @@ img {
             align-items: center;
     padding: 0;
   }
-  .navigation-list {
-    padding: 0;
-    margin: 0;
-  }
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1099,6 +1112,10 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
+  .navigation-list {
+    padding: 0;
+    margin-left: 88px;
+  }
   .icon-envelope {
     width: 14px;
     height: 10px;
@@ -1769,19 +1786,49 @@ img {
   fill: #ffffff;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .footer__container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
   }
   .footer__right {
     margin-bottom: 60px;
+  }
+  .join__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer__left {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .footer__right {
+    margin-bottom: 60px;
+    margin-right: 165px;
+    text-align: center;
+  }
+  .footer__left {
+    text-align: center;
   }
 }
 
