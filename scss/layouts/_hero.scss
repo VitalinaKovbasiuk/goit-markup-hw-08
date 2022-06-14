@@ -40,7 +40,7 @@
   // Завантаження ретінізованого фонового зображення
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('/images/hero-head@2x-mobile.jpg');
+      url('/images/hero-head2x-mobile.jpg');
     // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     // -webkit-image-set(url('/images/hero-head@2x-mobile.webp') 2x);
   }
@@ -55,7 +55,7 @@
     // Завантаження ретінізованого фонового зображення для tablet
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/images/hero-head@2x-tablet.jpg');
+        url('/images/hero-head2x-tablet.jpg');
       // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       // -webkit-image-set(url('/images/hero-head@2x-tablet.webp') 2x);
     }
@@ -70,7 +70,7 @@
     // Завантаження ретінізованого фонового зображення для decktop
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/images/hero-head@2x-deck.jpg');
+        url('/images/hero-head2x-deck.jpg');
       // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       // -webkit-image-set(url('/images/hero-head@2x-deck.webp') 2x);
     }
