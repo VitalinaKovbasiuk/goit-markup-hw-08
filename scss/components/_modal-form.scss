@@ -33,6 +33,14 @@
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--duration) var(--timing-function);
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 0) and (max-width: 479px) {
+    width: 90%;
+  }
 }
 
 .modal-btn {
