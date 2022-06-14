@@ -16,6 +16,12 @@
   margin-left: auto;
   margin-right: auto;
 
+  @media screen and (min-width: 0) and (max-width: 479px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+  
   @media screen and (min-width: 1200px) {
     width: 696px;
     font-size: 44px;
