@@ -14,6 +14,12 @@
   }
 }
 
+@media screen and (min-width: 0) and (max-width: 479px) {
+.mobile-menu__social-list {
+  width: 100%;
+}
+}
+
 // Розширення 0px-767px
 @media screen and (max-width: 767px) {
    .site-nav {
@@ -288,7 +294,7 @@
     padding: 0;
     margin-left: 88px;
   }
-  
+
   .icon-envelope {
     width: 14px;
     height: 10px;
