@@ -104,11 +104,17 @@
   .portfolio-projects-list {
     margin-bottom: 30px;
   }
+  .portfolio-projects-list:last-child {
+    margin-bottom: 0;
+  }
 
   .portfolio-navigation-item {
     margin-bottom: 15px;
   }
 
+  .portfolio-navigation-item:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
